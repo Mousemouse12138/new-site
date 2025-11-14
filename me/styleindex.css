@@ -1,0 +1,236 @@
+
+:root{
+  --bg: #ffe6b3;     
+  --card: #fff7e6;    
+  --ink: #4d3319;     
+  --brand: #86592d;   
+  --line: #e6ccb3;    
+  --sun: #f6d46b; 
+}
+
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+body{
+  background-color: var(--bg);
+  padding: 0 60px;                 
+  font-family: sans-serif;         
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+h1{ 
+  color: #fff7e6; 
+  text-align: center; 
+  background: var(--brand); 
+  padding: 14px 18px; 
+  border-radius: 16px;
+  margin: 24px auto;
+}
+h2{ margin-top: 28px; font-size: 1.4rem; color: var(--ink); }
+p{ font-size: 1rem; }
+
+a:link, a:visited{ color: #4b2e83; text-decoration: underline; }
+a:hover{ text-decoration: none; }
+a:active{ color: #2a1850; }
+
+h1{
+  max-width: 1100px;        
+  margin: 15px auto 10px;   
+}
+
+#mainnav{
+  background: #ac7339;
+  border-radius: 18px;
+  padding: 10px 16px;
+  max-width: 500px;         
+  margin: 0 auto 24px;     
+}
+
+#mainnav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;  
+  gap: 24px;               
+}
+
+#mainnav a{
+  display: inline-block;
+  padding: 8px 20px;
+  background: var(--sun);   
+  color: var(--ink);      
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 16px;
+  line-height: 1;
+  border: 2px solid #e1b94a; 
+  transition: background-color .2s ease, transform .1s ease;
+}
+
+#mainnav a:hover{ background: #ffd96a; }
+#mainnav a:active{ transform: translateY(1px); }
+
+#pagenav {
+  position: fixed;        
+  top: 30%;               
+  right: 20px;           
+  transform: translateY(-50%); 
+  background: #ac7339;    
+  border: 1px solid #e6ccb3;
+  border-radius: 12px;
+  padding: 5px;
+  z-index: 999;           
+}
+
+#pagenav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;   
+  gap: 12px;               
+}
+
+#pagenav a {
+  display: block;
+  padding: 5px 10px;
+  background: #f6d46b;      
+  color: #5a3a1f;          
+  border: 2px solid #e1b94a;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color .2s ease, transform .1s ease;
+}
+#pagenav a:active  { transform: translateY(1px); }
+
+.content-box{
+  background: #fff7e6;            
+  border: 2px solid #e6ccb3;      
+  border-radius: 16px;
+  padding: 24px 28px;            
+  max-width: 960px;              
+  margin: 24px auto 24px;         
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+}
+
+.content-box h2{ margin-top: 20px; }
+.content-box p{ margin: 10px 0 18px; }
+
+.content-box img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid #e6ccb3;
+  padding: 6px;
+  background: #fffaf0;
+}
+
+.content-box h2 {
+  background: #ffdd66;      
+  color: #5c3317;          
+  text-align: center;     
+  padding: 5px 10px;       
+  border-radius: 12px;    
+  border: 2px solid #cc9933;
+  margin: 20px auto 10px;  
+  width: fit-content;      
+  font-weight: bold;
+}
+
+main ul{                       
+  background: var(--card);
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+main ul li{ color: var(--ink); }
+
+img{
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  padding: 6px;
+  background: #fffaf0;
+  max-width: 100%;
+  height: auto;}
+
+.content-card{
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 16px 20px;
+}
+.footer-text{ color: var(--ink); opacity: .9; }
+
+#hero{
+  background: var(--brand);
+  color: #fff7e6;
+  padding: 12px 16px;
+  border-radius: 14px;
+}
+
+footer p{ margin: 8px 0; }
+
+#page-footer {
+  background: var(--brand);       
+  color: #fff7e6;                
+  text-align: center;    
+  padding: 16px 20px;
+  border-radius: 16px 16px 0 0;  
+  margin-top: 40px;
+}
+
+#page-footer a {
+  color: #fff7e6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#page-footer a:hover {
+  color: #ffd96a;
+}
+
+header {
+  position: relative;  
+}
+
+#logo {
+  position: absolute;
+  top: 4px;
+  left: 14px;
+  display: block;
+  width: 80px;        
+  height: auto;
+  z-index: 1;  
+}
+
+#logo svg circle {
+  fill: #4b2e05;      
+  stroke: #ffffff;    
+  stroke-width: 4px;  
+}
+
+#logo svg:hover circle {
+  fill: #6b3b0a;      
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+#logo svg {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+#logo svg:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+
