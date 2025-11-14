@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Website — Yufei Song</title>
+    <link rel="stylesheet" href="styleindex.css">
+  </head>
+  <body>
+  <header>
+  <a href="../index.html" id="logo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" aria-labelledby="logoTitle" role="img">
+      <title id="logoTitle">Yufei Song’s Web Design Logo (Knockout)</title>
+
+      <defs>
+        <mask id="knock">
+          <rect width="100%" height="100%" fill="white"/>
+          <text x="100" y="120"
+                text-anchor="middle"
+                font-family="Arial Black, Arial, sans-serif"
+                font-size="72"
+                fill="black"
+                letter-spacing="2">YS</text>
+        </mask>
+      </defs>
+
+      <circle cx="100" cy="100" r="90" fill="#000" mask="url(#knock)"/>
+    </svg>
+  </a>
+
+  <h1>My Website – Yufei Song</h1>
+
+  <nav id="mainnav">
+    <ul>
+      <li><a href="index.html" title="go to the Home page">Home</a></li>
+      <li><a href="profile.html" title="go to the Profile page">Profile</a></li>
+      <li><a href="interest.html" title="go to the Interest page">Interest</a></li>
+    </ul>
+  </nav>
+
+  <nav id="pagenav">
+    <ul>
+      <li><a href="#intro">Introduction of the Class</a></li>
+      <li><a href="#goal">My Goal of the Class</a></li>
+    </ul>
+  </nav>
+</header>
+
+	<div class="content-box">
+	<main>
+		<section>
+  <h2>Home</h2>
+  <img src="images/homephoto.jpg" 
+       alt="A welcoming photo for my homepage" 
+       width="400" 
+       height="400">
+  <!-- Photo by Yufei Song, taken with my phone -->
+</section>
+		<h2 id="intro">Introduction of the Class</h2>
+		<p>This course introduces the fundamentals of web design, focusing on how to 
+		build and structure web pages using HTML. Students will learn how to apply 
+		semantic elements, create navigation links, and organize content into meaningful sections.
+		By the end of the course, you will understand the essential building blocks of a 
+		website and be prepared to continue developing your skills with styling in CSS and 
+		interactivity through JavaScript.</p>
+		<h2 id="goal">My Goal of the Class</h2>
+		<p>My goal for this class is to gain a solid understanding of how websites 
+		are built from the ground up using HTML. I want to become confident in writing 
+		clean and well-structured code, so that I can share my ideas online in a clear 
+		and accessible way. By the end of the course, I hope to create a personal website 
+		that reflects my interests and can serve as the foundation for more advanced 
+		projects in the future.
+</p>
+	</main>
+	</div> 
+	
+	<footer id="page-footer">
+  <p><a href="index.html">Back to homepage</a></p>
+  <p><a href="https://nyu.edu">&copy; New York University 2025</a></p>
+  
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Raster Graphics — Logo + Right Panel</title>
+  <link rel="stylesheet" href="./style.css" />
+  <meta name="description" content="Foreground PNG used as logo at top-left; right-side info panel with title and description; background covers viewport."/>
+</head>
+<body>
+ <a href="../index.html" id="logo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" aria-labelledby="logoTitle" role="img">
+      <title id="logoTitle">Yufei Song’s Web Design Logo (Knockout)</title>
+
+      <defs>
+        <mask id="knock">
+          <rect width="100%" height="100%" fill="white"/>
+          <text x="100" y="120"
+                text-anchor="middle"
+                font-family="Arial Black, Arial, sans-serif"
+                font-size="72"
+                fill="black"
+                letter-spacing="2">YS</text>
+        </mask>
+      </defs>
+
+      <circle cx="100" cy="100" r="90" fill="#000" mask="url(#knock)"/>
+    </svg>
+  </a>
+  <div class="logo" aria-label="site logo">
+    <img
+      class="logo-img"
+      src="./images/me-480.png"
+      alt="Logo: cut-out portrait with burger hat"
+      width="240"
+      srcset="./images/me-480.png 1x, ./images/me-960.png 2x, ./images/me-1440.png 3x"
+      decoding="async" fetchpriority="high">
+  </div>
+
+  <aside class="info-panel" role="complementary">
+    <h1>Criminal Wanted</h1>
+    <p>
+    Take a close look — this is the webpage of an evil criminal who devoured all the Krabby Patties
+    at the famous Bikini Bottom restaurant, the Krusty Krab, and then escaped. 
+    She is now announcing her wicked and grand plan to the world.
+  </p>
+  <img 
+    src="./images/wanted.jpg" 
+    alt="Wanted Poster of the Burger Hat Criminal" 
+    class="poster">
+
+  <p>
+    Just like the burger hat she wears, her passion for hamburgers knows no bounds. 
+    She will continue to hunt down every burger across the globe.
+  </p>
+</aside>
+
+  <div class="overlay" aria-hidden="true"></div>
+</body>
+</html>

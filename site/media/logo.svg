@@ -1,0 +1,22 @@
+<!-- ys-logo-knockout.svg（或直接内嵌到 HTML 中） -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" aria-labelledby="logoTitle" role="img">
+  <title id="logoTitle">Yufei Song’s Web Design Logo (Knockout)</title>
+
+  <!-- 用一个“白底 + 黑字母”的遮罩来把字母挖空 -->
+  <defs>
+    <mask id="knock">
+      <!-- 遮罩默认显示白色区域、隐藏黑色区域 -->
+      <rect width="100%" height="100%" fill="white"/>
+      <!-- 把字母画成黑色：在遮罩里“黑=洞” -->
+      <text x="100" y="120"
+            text-anchor="middle"
+            font-family="Arial Black, Arial, sans-serif"
+            font-size="72"
+            fill="black"
+            letter-spacing="2">YS</text>
+    </mask>
+  </defs>
+
+  <!-- 你的自定义形状（这里示例用圆形），纯黑色填充 -->
+  <circle cx="100" cy="100" r="90" fill="#000" mask="url(#knock)"/>
+</svg>
