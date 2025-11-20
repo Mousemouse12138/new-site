@@ -76,6 +76,14 @@ a:focus {
   flex-wrap: wrap;
 }
 
+.site-nav ul {
+  flex-direction: column;  
+}
+
+.site-nav:not(.nav-open) ul {
+  display: none;
+}
+
 .site-nav a {
   color: #e5e7eb;
   font-size: 0.95rem;
@@ -86,6 +94,31 @@ a:focus {
 .site-nav a:hover,
 .site-nav a:focus {
   background: #374151;
+}
+
+.nav-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  margin: 0.25rem 0 0.25rem 1rem;
+  background-color: #3b3b3b;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav-toggle-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  fill: #e5e7eb; 
+}
+
+.nav-toggle:focus-visible {
+  outline: 2px solid #f97316;
+  outline-offset: 2px;
 }
 
 
@@ -409,6 +442,17 @@ a:focus {
 
   .content-grid {
     grid-template-columns: minmax(0, 2.2fr) minmax(0, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-toggle {
+    display: none;  
+  }
+
+  .site-nav ul {
+    display: flex !important;  
+    flex-direction: row;
   }
 }
 

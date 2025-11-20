@@ -45,13 +45,28 @@
        
     </header>
 
-    <nav class="site-nav" aria-label="Main navigation">
-      <ul>
-        <li><a href="index.html">Overview</a></li>
-        <li><a href="analysis.html">Analysis</a></li>
-        <li><a href="reference.html">Reference</a></li>
-      </ul>
-    </nav>
+    <button
+    class="nav-toggle"
+    id="navToggle"
+    type="button"
+    aria-label="Toggle navigation"
+    aria-expanded="false"
+    aria-controls="mainNav">
+
+    <svg class="nav-toggle-icon" viewBox="0 0 24 24" aria-hidden="true">
+    <rect x="3" y="5" width="18" height="2" rx="1"></rect>
+    <rect x="3" y="11" width="18" height="2" rx="1"></rect>
+    <rect x="3" y="17" width="18" height="2" rx="1"></rect>
+    </svg>
+    </button>
+
+   <nav id="mainNav" class="site-nav" aria-label="Main navigation">
+   <ul>
+    <li><a href="index.html">Overview</a></li>
+    <li><a href="analysis.html">Analysis</a></li>
+    <li><a href="reference.html">Reference</a></li>
+   </ul>
+   </nav>
 
     <main class="page-main" id="main-content">
       <div class="content-grid">

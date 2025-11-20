@@ -6,9 +6,10 @@ const dayBox = document.getElementById('dayBox');
 const dayText = document.getElementById('dayText');
 const dayImage = document.getElementById('dayImage');
 
+const navToggle = document.getElementById('navToggle');
+const mainNav = document.getElementById('mainNav');
 
 const headings = document.querySelectorAll('main h2, main h3');
-
 
 const vertigoNotes = [
   'Vertigo uses complementary colours to show tension between desire and illusion.',
@@ -92,5 +93,13 @@ if (headings && headings.length > 0) {
     heading.addEventListener('mouseleave', removeHeadingHover);
   });
 }
+
+if (navToggle && mainNav) {
+  navToggle.addEventListener('click', () => {
+    const isOpen = mainNav.classList.toggle('nav-open');
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+}
+
 
 updateDayBox();
