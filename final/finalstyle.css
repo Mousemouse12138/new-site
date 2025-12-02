@@ -537,6 +537,58 @@ button:focus-visible {
 }
 
 
+@media (max-width: 600px) {
+
+  #headerArea {
+    min-height: 280px; 
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .site-title {
+    font-size: 2.3rem !important;
+    line-height: 2.6rem !important;
+    margin-bottom: 12px;
+  }
+
+  .page-title,
+  h1.page-title {
+    font-size: 2rem !important;
+  }
+
+  #themeToggle {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    margin-top: 8px;
+    align-self: center;
+  }
+
+  #logo {
+    position: relative;
+    right: auto;
+    top: auto;
+    margin: 8px auto;
+  }
+
+  #poemBox {
+    margin-top: 12px;
+    font-size: 0.9rem;
+  }
+
+  .skip-to-content {
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    margin-bottom: 8px;
+  }
+}
+
 
 
 
