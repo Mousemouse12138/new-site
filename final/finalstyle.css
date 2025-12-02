@@ -537,57 +537,68 @@ button:focus-visible {
 }
 
 
+
 @media (max-width: 600px) {
 
-  #headerArea {
-    min-height: 280px; 
-    padding: 20px 16px;
+  .site-header {
+    height: auto;
+    min-height: 320px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    padding: 32px 16px;
     text-align: center;
   }
 
   .site-title {
-    font-size: 2.3rem !important;
-    line-height: 2.6rem !important;
-    margin-bottom: 12px;
-  }
-
-  .page-title,
-  h1.page-title {
-    font-size: 2rem !important;
-  }
-
-  #themeToggle {
     position: relative;
-    right: auto;
-    top: auto;
-    transform: none;
-    margin-top: 8px;
-    align-self: center;
+    top: 0;
+    left: 0;
+
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    margin: 0 auto 10px;
+    text-align: center;
   }
 
   #logo {
     position: relative;
-    right: auto;
     top: auto;
+    right: auto;
+    margin: 10px auto;
+  }
+
+  #themeToggle {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+
+    margin-top: 12px;
+    align-self: center;
+  }
+
+  .skip-to-content {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+
     margin: 8px auto;
+    text-align: center;
   }
 
   #poemBox {
     margin-top: 12px;
+    width: 90%;
     font-size: 0.9rem;
-  }
-
-  .skip-to-content {
-    left: auto !important;
-    top: auto !important;
-    transform: none !important;
-    margin-bottom: 8px;
+    text-align: center;
   }
 }
+
 
 
 
